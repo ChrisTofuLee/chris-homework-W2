@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>Contact Me</title>
+        <title class="text-info">Contact Me</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
         <style>
@@ -13,8 +13,8 @@
           }
         </style>
     </head>
-    <body class="bg-secondary">
-        <nav class="navbar static-top mb-5 shadow bg-light">
+    <body class="bg-light">
+        <nav class="navbar static-top shadow bg-light">
             <div class="container">
                 <header class="col-xs-12 col-xl-3 text-center">
                     <a class="navbar-brand text-body" href="index.html"><h2>Christopher Lee</h2></a>
@@ -22,13 +22,13 @@
                 <div class="col-xs-12 col-xl-6">
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
-                        <a class="nav-link active text-dark" href="index.html">About</a>
+                        <a class="nav-link active text-info" href="index.html">About</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-dark" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link text-info" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-dark" href="contact.html">Contact</a>
+                        <a class="nav-link text-info" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 
@@ -37,19 +37,46 @@
         </nav>
 
 
+        <header class="jumbotron bg-info text-center">
+            <section class="container">
+              <h1 class="jumbotron-heading text-light">Contact</h1>
+              <p class="lead text-light">Thanks for getting to know me and some of my work. If you'd like to reach out to me for any more information or help please use the form or click on the button below.</p>
+              <p>
+                <a class="btn btn-light" data-toggle="modal" data-target="#exampleModal">Contact Information</a>
 
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Contact Details</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            hyclee90@gmail.com
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+              </p>
+            </section>
+        </header>
         <main class="container">
             <div class="row">
-                <header class="col-xs-12 col-xl-8 card-header bg-light">
-                  <h1>Contact</h1>
-                </header>
-              </div>
-            <div class="row">
-                <div class="col-xl-8 col-xs-12 bg-light">
-                    <form>
+                <div class="col-xl-8 col-xs-12 bg-light pt-2 text-info">
+                    <form action="mailto:hyclee90@gmail.com" method="post" enctype="text/plain">
+
                         <div class="form-group">
                         <label class="formGroupExampleInput1">Name</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="name">
                         </div>
                         <div class="form-group">
                             <label class="exampleFormControlInput2">Email address</label>
@@ -60,18 +87,26 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-info" value="Send">Submit</button>
                         </div>
                     </form>
                 </div>
             </div>
         </main>
         
-        <footer class="footer mt-auto py-3 fixed-bottom bg-light">
+        <footer class="footer mt-auto py-2 fixed-bottom bg-light border-top">
             <div class="container text-center">Follow me here 
-            <a href="https://www.instagram.com/chris.see.tofu">
+            <a href="https://www.instagram.com/chris.see.tofu" target="_blank">
               <img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png" width="30" height="30" alt="">
             </a>
+            <a href="https://www.linkedin.com/in/chris-h-lee/" target="_blank">
+                <img
+                  src="https://image.flaticon.com/icons/svg/174/174857.svg"
+                  width="30"
+                  height="30"
+                  alt="LinkedIn Icon"
+                />
+              </a>
             </div>
           </footer>
         

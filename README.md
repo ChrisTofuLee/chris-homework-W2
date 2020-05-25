@@ -13,3 +13,4 @@ The site will include the following:
 - Valid HTML
 - Footer
 
+merge into one page
